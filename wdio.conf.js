@@ -59,14 +59,7 @@ exports.config = {
         maxInstances: 5,
         //
         browserName: 'chrome',
-        acceptInsecureCerts: true,
-        /*'goog:chromeOptions': {
-            args: [
-                '--disable-blink-features',
-                '--disable-blink-features=AutomationControlled',
-                'excludeSwitches', 
-                'enable-logging']
-        },*/
+        acceptInsecureCerts: true
         // If outputDir is provided WebdriverIO can capture driver session logs
         // it is possible to configure which logTypes to include/exclude.
         // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
@@ -150,7 +143,7 @@ exports.config = {
     // See the full list at http://mochajs.org/
     mochaOpts: {
         ui: 'bdd',
-        timeout: 100000
+        timeout: 60000
     },
     //
     // =====

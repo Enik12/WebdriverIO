@@ -2,8 +2,8 @@
 
 module.exports = class Page {
 
-    open (path) {
-        return browser.url(`https://pastebin.com/${path}`)
+    open () {
+        return browser.url('https://pastebin.com')
     };
 
 };
